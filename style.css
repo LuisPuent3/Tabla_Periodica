@@ -1,0 +1,415 @@
+:root{
+    --yellow: #e5ff51;
+    --pink: #d2427f;
+    --blue: #28a6da;
+    --green: #99ec3f;
+    --white: #fff;
+    --black: #000;
+    --red: #bd0000;
+    --purple: #9859b6;
+    --orange: #f89735;
+    --ligthblue: #4deeea;
+    --greenblue: #cbf026;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+    font-family: 'Signika Negative', sans-serif;
+    color: var(--white);
+
+}
+
+h1,h2{
+    margin: 0;
+    text-align: center; 
+    position: relative;
+    top: 20px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+h2{
+    font-size: 15px;
+}
+.simbologia{
+    width: 300px;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    top: -60px;
+}
+.category{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.text{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-top: -12px;
+    display: block;
+    margin-left: 20px;}
+/* Tabla box para los datos */
+
+
+.numberBox{  
+
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 0px;
+    margin-top: 6px;
+}
+
+.elementBox{
+    width: 150px;
+    height: 150px;
+    margin-top: 3px;
+    margin-right: 12px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.symbolBox{
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.nombreBox{
+    font-size: 29px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-top: 8px;
+
+
+}
+/* Medidas de las tablas principales */
+.tableBox{
+    width: 89%;
+    margin-bottom: -30px;
+    margin-top: 10px;
+    margin-left: 350px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    display: flex;
+    top: 5px;}
+  
+.tableMain{
+    width: 89.4%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: -280px;    
+}
+.tableMain-Dos{
+    width: 91%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    top: -280px;
+}
+
+.element{
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.number {
+    text-align: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+.symbol {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+.nombre{
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-left: 5px; }
+
+.capital-letter{
+    text-transform: uppercase;
+}
+
+.dev{
+    border: 7px solid var(--ligthblue);
+    color: var(--ligthblue);
+}
+
+.GasBox{
+    border: 7px solid var(--ligthblue);
+    color: var(--ligthblue);
+}
+
+
+.GasNoble{
+    border: 5px solid var(--ligthblue);
+    color: var(--ligthblue);
+}
+
+.Alcalino{
+    border: 5px solid var(--purple);
+    color: var(--purple);
+}
+.AlcalinoTerreo{
+    border: 5px solid var(--red);
+    color: var(--red);
+}
+.MetalTransicion{
+    border: 5px solid var(--greenblue);
+    color: var(--greenblue);
+}
+.lantanidos{
+    margin-top: 20px;
+    border: 5px solid var(--white);
+    color: var(--white);
+}
+.Actinidos{
+    border: 5px solid var(--white);
+    color: var(--white);
+}
+.NoMetal{
+    border: 5px solid var(--blue);
+    color: var(--blue);
+}
+.Metaloides{
+    border: 5px solid var(--green);
+    color: var(--green);
+}
+.MetaloidesTransicion{
+    border: 5px solid var(--green);
+    color: var(--green);
+}
+.Halagenos{
+    border: 5px solid var(--pink);
+    color: var(--pink);
+}
+.MetalesAlcalinos{
+    border: 5px solid var(--orange);
+    color: var(--orange);
+}
+
+
+.element:hover{
+    transform: scale(1.1);
+    color: var(--black);
+    transition-duration: 0.3s;
+    cursor: pointer;}
+
+.GasNoble:hover{
+    background: var(--ligthblue);
+}
+.Alcalino:hover{
+    background: var(--purple);
+}
+.AlcalinoTerreo:hover{
+    background: var(--red);
+}
+.MetalTransicion:hover{
+    background: var(--greenblue);
+}
+.lantanidos:hover{
+    background: var(--white);
+}
+.Actinidos:hover{
+    background: var(--white);
+}
+.NoMetal:hover{
+    background: var(--blue);
+}
+.Metaloides:hover{
+    background: var(--green);
+}
+.MetaloidesTransicion:hover{
+    background: var(--green);
+}
+.Halagenos:hover{
+    background: var(--pink);
+}
+.MetalesAlcalinos:hover{
+    background: var(--orange);
+}
+
+/* .cta{
+    display: inline-block;
+    padding: 7px 0;
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #283773;
+    background: var(--white);
+
+} */
+
+.textoModal{
+    color: #000;
+}
+
+
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 40%;
+    height: 50%;
+    color:black;
+    background: var(--white);
+    /* overflow: hidden; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 0.8s;
+    transform: translateY(0%);
+    border-radius: 10px;
+
+}
+
+
+.modal-close{
+    transform: translateY(-200%);
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color: var(--white);
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+ /* modal dos */
+.modal-containerDos{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalDos{
+    width: 40%;
+    height: 50%;
+    color:black;
+    background: var(--white);
+    /* overflow: hidden; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 0.8s;
+    transform: translateY(0%);
+    border-radius: 10px;
+
+}
+
+
+.modal-closeDos{
+    transform: translateY(-200%);
+}
+
+.closeDos{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color: var(--white);
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.tittleModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.tittleModalDos{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.textçModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+
+    /* transform: translateY(-200%); */
+/* } */  
